@@ -5,7 +5,7 @@
 ** Login   <thibau_j@epitech.net>
 **
 ** Started on  Mon Apr 28 09:02:44 2014 thibau_j
-** Last update Mon Apr 28 16:47:28 2014 thibau_j
+** Last update Mon Apr 28 16:52:59 2014 thibau_j
 */
 
 #include <errno.h>
@@ -85,6 +85,7 @@ void			init_fct_ctrl(t_ctrl *fct)
   fct->free_list = free_list;
   fct->remove_one = remove_one;
   fct->insert_one = insert_one;
+  fct->remove_last = remove_last;
   fct->get_list_size = get_list_size;
 }
 
@@ -92,29 +93,30 @@ void			init_fct_ctrl(t_ctrl *fct)
 ** Exemple de main.
 */
 
-/* int			main(int ac, char **av) */
-/* { */
-/*   t_list		*list; */
-/*   t_ctrl		fct; */
-/*   int			i; */
+/*int			main(int ac, char **av)
+{
+  t_list		*list;
+  t_ctrl		fct;
+  int			i;
 
-/*   init_fct_ctrl(&fct); */
-/*   i = 0; */
-/*   list = NULL; */
-/*   if (ac < 2) */
-/*     { */
-/*       printf("./a.out data1 data2 data3 [...]\n"); */
-/*       return (1); */
-/*     } */
-/*   while (av[i] != NULL) */
-/*     { */
-/*       (*(fct.add_data))(&list, av[i]); */
-/*       i++; */
-/*    } */
-/*   (*(fct.dump_list_char))(list); */
-/*   (*(insert_one))(&list, "PIPIPIPI", 2, 0); */
-/*   (*(fct.dump_list_char))(list); */
-/*   (*(fct.free_list))(&list, 0); */
-/*   printf("%d\n", (int)(*(fct.get_list_size))(list)); */
-/*   return (1); */
-/* } */
+  init_fct_ctrl(&fct);
+  i = 0;
+  list = NULL;
+  if (ac < 2)
+    {
+      printf("./a.out data1 data2 data3 [...]\n");
+      return (1);
+    }
+  while (av[i] != NULL)
+    {
+      (*(fct.add_data))(&list, av[i]);
+      i++;
+   }
+  (*(fct.dump_list_char))(list);
+  (*(insert_one))(&list, "PIPIPIPI", 2, 0);
+  (*(remove_last))(&list, 0);
+  (*(fct.dump_list_char))(list);
+  (*(fct.free_list))(&list, 0);
+  printf("%d\n", (int)(*(fct.get_list_size))(list));
+  return (1);
+  }*/
