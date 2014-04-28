@@ -5,7 +5,7 @@
 ## Login   <thibau_j@epitech.net>
 ## 
 ## Started on  Mon Apr 28 16:42:29 2014 thibau_j
-## Last update Mon Apr 28 16:46:45 2014 thibau_j
+## Last update Mon Apr 28 16:57:01 2014 thibau_j
 ##
 
 NAME	= Liblist.a
