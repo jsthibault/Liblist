@@ -12,6 +12,10 @@
 ** Liste chainé générique by thibau_j.
 */
 
+/*
+** if data == struc alors faire sa propre fonction de dumping
+*/
+
 #ifndef STRUCT_H
 # define STRUCT_H
 
