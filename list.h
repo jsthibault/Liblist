@@ -34,6 +34,7 @@ typedef	struct		s_ctrl
   void			(*remove_one)(t_list **, int, int);
   void			(*insert_one)(t_list **, void *, int place, int da);
   void			(*remove_last)(t_list **, int place);
+  void			(*my_dump)(t_list *);
   size_t		(*get_list_size)(t_list *ptr);
 }			t_ctrl;
 
