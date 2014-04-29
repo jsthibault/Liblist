@@ -12,8 +12,10 @@
 ** Liste chainé générique by thibau_j.
 */
 
-/*
-** if data == struc alors faire sa propre fonction de dumping
+/*                                                                                                                                                                                                                   
+** if data == struc alors faire sa propre fonction de dumping                                                                                                                                                        
+** et initialiser my_dump à la main de la façon suivante :                                                                                                                                                           
+** t_ctrl.my_dump = ma_fonction_de_dump;                                                                                                                                                                             
 */
 
 #ifndef STRUCT_H
