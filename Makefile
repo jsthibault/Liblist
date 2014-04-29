@@ -5,7 +5,7 @@
 ## Login   <thibau_j@epitech.net>
 ## 
 ## Started on  Mon Apr 28 16:42:29 2014 thibau_j
-## Last update Mon Apr 28 16:57:01 2014 thibau_j
+## Last update Tue Apr 29 08:44:38 2014 thibau_j
 ##
 
 NAME	= Liblist.a
@@ -14,6 +14,7 @@ RM=     rm -f
 
 SRC=    function_list_basics.c \
 	function_list_move.c \
+	parse_av.c \
 	function_list_state.c
 
 ECHO=   echo

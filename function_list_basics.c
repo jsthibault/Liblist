@@ -5,7 +5,7 @@
 ** Login   <thibau_j@epitech.net>
 **
 ** Started on  Mon Apr 28 09:02:44 2014 thibau_j
-** Last update Mon Apr 28 16:56:39 2014 thibau_j
+** Last update Mon Apr 28 16:52:59 2014 thibau_j
 */
 
 #include <errno.h>
@@ -39,10 +39,6 @@ static void		add_data(t_list **ptr, void *data)
     }
 }
 
-/*
-** Modify this function as you want for your own output.
-*/
-
 static void		dump_list_char(t_list *ptr)
 {
   t_list		*tmp;
@@ -54,14 +50,13 @@ static void		dump_list_char(t_list *ptr)
     {
       printf("Maillon n°%d : [%s]\n", i, (char *)tmp->data);
       tmp = tmp->next;
-      ++i;
+      i++;
     }
   tmp = ptr;
   while (tmp->next != NULL)
     tmp = tmp->next;
   while (tmp != NULL)
     {
-      --i;
       printf("De l'arrière Maillon n°%d : [%s]\n", i, (char *)tmp->data);
       tmp = tmp->prev;
     }
